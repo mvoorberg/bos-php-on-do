@@ -6,6 +6,7 @@
 	## When we added AutoSSL, redirect to https
 	RewriteCond %{HTTPS} off
 	RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+	-->
 
 	RewriteBase /blog
 
@@ -14,5 +15,5 @@
 
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteRule ^(.*)$ index.php [QSA,L]
-
+<!--
 </IfModule> -->
