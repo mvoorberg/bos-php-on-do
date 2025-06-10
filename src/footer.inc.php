@@ -31,33 +31,7 @@
             <div class="container">
                 <!-- Info Bottom - Footer Center-->
                 <div class="row">
-                    <!-- Twitter Feed-->
-                    <div class="col-md-6 item-peak">
-                        <span class="arrow_footer"></span>
-                        <div class="border-right">
-                            <h4>Twitter</h4>
-                            <div class="twitter">
-
-<?php
-// Don't show a Twitter Widget on the home page or the Advert landing pages!
-if ($_SERVER['REQUEST_URI'] === '/' || strpos(strtolower($_SERVER['REQUEST_URI']), "/service/") !== false) {
-?>
-	<h4 class="timeline-Header-title u-inlineBlock" data-scribe="element:title"><i class="fa fa-twitter"></i> <span class="timeline-Header-byline" data-scribe="element:byline">
-	<a class="customisable-highlight" href="https://twitter.com/BinaryOpsCa" title="‎@BinaryOpsCa on Twitter">‎@BinaryOpsCa</a></span></h4>
-<?php
-} else {
-?>
-    <a class="twitter-timeline" data-width="300" data-height="250" data-theme="dark" data-link-color="#d21c2d" href="https://twitter.com/BinaryOpsCa?ref_src=twsrc%5Etfw">Tweets by BinaryOpsCa</a>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<?php
-}
-?>
-
-							</div>
-                        </div>
-                    </div>
-                    <!-- End Twitter Feed-->
-
+                   
                     <!-- Recent Links-->
                     <div class="col-md-6 item-peak">
                         <span class="arrow_footer"></span>
@@ -74,25 +48,6 @@ if ($_SERVER['REQUEST_URI'] === '/' || strpos(strtolower($_SERVER['REQUEST_URI']
                     </div>
                     <!-- End Recent Links-->
 
-                    <!-- Newsletter-->
-                    <!-- <div class="col-md-4 item-peak">
-                        <span class="arrow_footer"></span>
-						<h4>Let's keep in touch!</h4>
-						<p>Subscribe for updates from BinaryOps Software.</p>
-
-                        <form action="//binaryops.us1.list-manage.com/subscribe/post?u=6dd1cbb910423ee10b9a6772f&amp;id=3c229683dc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-							<div class="input-group">
-								<span class="input-group-addon">
-									<i class="fa fa-envelope"></i>
-								</span>
-								<input class="form-control" placeholder="Email Address" name="EMAIL" id="mce-EMAIL" type="email" required="required">
-								<span class="input-group-btn">
-									<button id="subscribe-btn" class="btn btn-primary" type="submit" name="subscribe" >Go!</button>
-								</span>
-							</div>
-						</form>
-                    </div> -->
-                    <!-- End Newsletter-->
                 </div>
                 <!-- Info Bottom - Footer Center-->
             </div>
@@ -162,21 +117,6 @@ if ($_SERVER['REQUEST_URI'] === '/' || strpos(strtolower($_SERVER['REQUEST_URI']
 		// if ($_SERVER['PHP_SELF'] == "/index.php"){
 		// 	echo "<script src=\"/js/builthome.min.js\"></script>";
 		// }
-// ? >
-//         <!-- LinkedIn Insight -->
-// 		<script>
-// 				_linkedin_data_partner_id = "60244";
-// 				</script><script type="text/javascript">
-// 				(function(){var s = document.getElementsByTagName("script")[0];
-// 				var b = document.createElement("script");
-// 				b.type = "text/javascript";b.async = true;
-// 				b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-// 				s.parentNode.insertBefore(b, s);})();
-// 		</script>
-// 		<noscript>
-// 			<img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=60244&fmt=gif" />
-// 		</noscript>
-// < ? php
 	} else {
 ?>
 	<!-- *******************************************************************

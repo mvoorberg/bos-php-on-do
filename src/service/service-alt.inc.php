@@ -9,7 +9,7 @@ class BoxServiceAltSection {
 	var $rightTitle;
 	var $rightParagraph;
 
-	function BoxServiceAltSection($leftTitle = "The Left",
+	function __construct($leftTitle = "The Left",
 								$leftParagraph = "Left side text...",
 								$rightTitle = "The Right",
 								$rightParagraph = "Right side text...") {

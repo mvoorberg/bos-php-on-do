@@ -5,7 +5,7 @@ class ConversationSection {
     var $options;
     var $stylesRendered = false;
 
-   function ConversationSection($options) {
+   function __construct($options) {
 		if ($options) {
 			$this->options = $options;
 		} else {
