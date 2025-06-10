@@ -26,3 +26,4 @@ services:
   name: bos-php-on-do
   run_command: heroku-php-apache2 -C apache_app.conf
   source_dir: /src
+
