@@ -1,0 +1,3 @@
+Sitemap: https://binaryops.ca/blog/sitemap.xml
+User-agent: *
+Disallow: /mdproxy/

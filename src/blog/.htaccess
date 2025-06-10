@@ -1,0 +1,18 @@
+
+## REWRITE BLOG URLS ##
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+    
+	## When we added AutoSSL, redirect to https
+	RewriteCond %{HTTPS} off
+	RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+	RewriteBase /blog
+
+	# Remove trailing slashes
+	RewriteRule ^(.*)\/(\?.*)?$ $1$2 [R=301,L]
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^(.*)$ index.php [QSA,L]
+
+</IfModule>
