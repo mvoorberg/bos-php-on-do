@@ -24,6 +24,6 @@ services:
   instance_count: 1
   instance_size_slug: apps-s-1vcpu-0.5gb
   name: bos-php-on-do
-  run_command: heroku-php-apache2 -C apache_app.conf
+  run_command: pwd && ls && heroku-php-apache2 -C apache_app.conf
   source_dir: /src
 
