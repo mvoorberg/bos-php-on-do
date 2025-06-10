@@ -15,7 +15,7 @@ class BoxServiceSection {
 	var $rightParagraph;
 	var $rightTitle;
 
-	function BoxServiceSection($title = "Default Title",
+	function __construct($title = "Default Title",
 								$tagline = "Your tagline goes here",
 								$mainParagraph = "Lorem ipsum dolor sit amet...",
 								$bullets = array("One", "Two", "Three", "Four", "Five"),
